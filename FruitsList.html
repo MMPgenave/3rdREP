@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Hi</h1>
+
+<p>Here I use JS codes to create a list of fruit</p>
+<button onclick="document.getElementById('demo').innerHTML = text1">Ordered list</button>
+
+<button onclick="document.getElementById('demo').innerHTML = text2">Unordered list</button>
+<p id="demo"></p>
+
+<script>
+var fruits, text, fLen, i;
+fruits = ["Banana", "Orange", "Apple", "Mango"];
+fLen = fruits.length;
+text1 = "<ol>";
+text2 = "<ul>";
+for (i = 0; i < fLen; i++) {
+  text1 += "<li>" + fruits[i] + "</li>";
+  
+  text2 += "<li>" + fruits[i] + "</li>";
+}
+text1 += "</ol>";
+text2 += "</ul>";
+</script>
+</body>
+</html>
